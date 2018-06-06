@@ -1,0 +1,137 @@
+<html lang="en">
+	<head>
+	  	<meta charset="UTF-8">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  	<title>Survey Form</title>
+	  	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	  	<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+
+		<div >
+			<h1 id="title">Survey Form</h1>
+		</div>
+
+		<div id="content">
+			<p id="description">Let us know how we can improve freeCodeCamp</p>
+
+			<form action="" id="survey-form">
+
+				<div class="row">
+					<div class="label">
+						<label id="name-label" for="name"> Name : </label>
+					</div>
+					<div class="survey">
+						<input autofocus class="field" type="text" name="name" id="name" placeholder="Enter your name" required>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="label">
+						<label id="email-label" for="email"> Email : </label>
+					</div>
+					<div class="survey">
+						<input class="field" type="email" name="email" id="email" placeholder="Enter your email" required>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="label">
+						<label id="number-label" for="number"> Age : </label>
+					</div>
+					<div class="survey">
+						<input class="field" type="number" name="number" min="1" max="60" id="number" placeholder="Enter your age" required>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="label">
+						<label for="level"> Which option best describes your current role? </label>
+					</div>
+					<div class="survey">
+						<select id="dropdown" name="level">
+						   <option value="student">Student</option>
+						   <option value="job">Full Time Job</option>
+						   <option value="learner">Full Time Learner</option>
+							<option value="notsay">Prefer not to say</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="label">
+						<label id="radiobutton-label" for="number">  How likely is that you would recommend freeCodeCamp to a friend? </label>
+					</div>
+					<div class="survey">
+						<ul style="list-style: none;">
+							<li id="radio">
+								<label>Definitely<input class="custominput" type="radio" name="radiobutton" value="1" checked>
+								</label>
+							</li>
+							<li id="radio">
+								<label>Maybe<input class="custominput" type="radio" name="radiobutton" value="2">
+								</label>
+							</li>
+							<li id="radio">
+								<label>Not sure<input class="custominput" type="radio" name="radiobutton" value="3">
+								</label>
+							</li>
+
+						</ul>
+
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="label">
+						<label for="liked"> What do you like most in FCC:</label>
+					</div>
+					<div class="survey">
+						<select id="dropdown" name="liked">
+						   <option disabled selected>Select a option</option>
+						   <option value="challanges">Challanges</option>
+						   <option value="projects">Projects</option>
+							<option value="community">Community</option>
+							<option value="opensource">Open Source</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row row-checkbox">
+					<div class="label">
+						<label for="level">Things that should be improved in the future
+	(Check all that apply):</label>
+					</div>
+					<div class="survey">
+						<input type="checkbox" id="checkbox" name="frontend" value="frontend"> Front-end Projects<br>
+						<input type="checkbox" id="checkbox" name="backend" value="backend"> Back-end Projects<br>
+						<input type="checkbox" id="checkbox" name="dataV" value="dataV"> Data Visualization<br>
+						<input type="checkbox" id="checkbox" name="challanges" value="dataV"> Challanges<br>
+						<input type="checkbox" id="checkbox" name="openS" value="dataV"> Open Source Community<br>
+						<input type="checkbox" id="checkbox" name="GlitterH" value="dataV"> Glitter Help Rooms<br>
+						<input type="checkbox" id="checkbox" name="videos" value="dataV"> Videos<br>
+						<input type="checkbox" id="checkbox" name="cityM" value="dataV"> City Meetups<br>
+						<input type="checkbox" id="checkbox" name="wiki" value="dataV"> Wiki<br>
+						<input type="checkbox" id="checkbox" name="forum" value="dataV"> Forum<br>
+						<input type="checkbox" id="checkbox" name="additional" value="dataV"> Additional Courses<br>
+					</div>
+				</div>
+
+				<div class="row row-comment">
+					<div class="label">
+						<label for="comment"> Any Comments or Suggestions? </label>
+					</div>
+					<div class="survey">
+						<textarea name="comment" form="comment">Enter text here...</textarea>
+					</div>
+				</div>
+
+				<input id="submit" type="submit" value="Submit">
+			</form>
+		</div>
+
+	</body>
+</html>
