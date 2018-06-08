@@ -2,17 +2,18 @@
 
 html, body{
 	text-align: center;
-	background-color: #A9D7D1;
+	background-color: rgb(17, 202, 226);
 	font-family: 'Roboto',Helvetica, sans-serif;
 	min-width: 320px;
 }
 
-header {
-  font-size: 2em;
-  font-weight: bold;
-  margin: 20px;
+body{
+	margin-bottom: 60px;
 }
 
+#title{
+	color: white;
+}
 #content{
 	background-color: white;
 	width: 70%;
@@ -87,6 +88,17 @@ div{
 
 #checkbox {
 	padding-bottom: 15px;
+}
+
+.row-comment div textarea{
+	padding: 10px;
+	margin: 0px; 
+	width: 292px;
+	height: 112px;
+}
+
+.row-comment .label{
+	margin-top: 40px;
 }
 
 #submit{
